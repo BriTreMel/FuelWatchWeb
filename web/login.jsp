@@ -16,32 +16,25 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>FuelWatch Customer Login</title>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="formStyleSheet.css">
     </head>
-    <body>
-        <h1>Login Form</h1>
-        <html:form action="/login">
-            <table border="1">
-                <tbody>
-                    <tr>
-                        <td colspan="2">
-                            <bean:write name="LoginForm" property="error" filter="false"/>
-                            &nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>Enter your email:</td>
-                        <td><html:text property="email" /></td>
-                    </tr>
-                    <tr>
-                        <td>Enter your password:</td>
-                        <td><html:text property="password" /></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><html:submit value="Login" /></td>
-                    </tr>
-                </tbody>
-            </table>
-        </html:form>
-    </body>
+        <body>
+
+	<div class="form-style">
+			<h1>FuelWatch<span> </span></h1>
+                        <html:form action="/login">
+			
+				<div class="section"</div>
+				<div class="inner-wrap">
+					<label>E-mail<html:text property="email" /></label>
+					<label>Password<html:text property="password" /></label>
+				</div>
+				
+				<div class="button-section">
+                                    <html:submit value="Login" />
+				
+                                    <input type="submit" name="reset" value="Reset Password" />
+				</div>
+			</html:form>
+	</div>
 </html:html>  

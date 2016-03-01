@@ -45,7 +45,6 @@
 						<li><a href="#">About</a></li>
                                                 <li><a href="#">Contact</a></li>
 						<li><a href="login.jsp">Log In</a></li>
-                                                <li><a href="registerNewCust.jsp">Register</a></li>
 						
 					</ul>
 				</div>
