@@ -13,7 +13,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="formStyleSheet.css">
-        <title>Register New Customer</title>
+        <title>Edit Your Details</title>
     </head>
     <body>
 		<div class ="head">
@@ -30,7 +30,7 @@
 			</div>
 		</div>
         <div class="form-style">
-            <h1>FuelWatch<span>Register New Customer</span></h1>
+            <h1>FuelWatch<span>Update Your Profile</span></h1>
             <html:form action="/register">
                 <bean:write name="RegisterForm" property="regError"
                             filter="false"/>
@@ -67,7 +67,7 @@
                     <label>Alternative Number<html:text property="contact3" /></label>
                 </div>
                 <div class="button-section">
-                    <html:submit value="Register" />
+                    <html:submit value="Update Details" />
                 </div>
             </html:form>
         </div>

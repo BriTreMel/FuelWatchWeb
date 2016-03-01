@@ -5,7 +5,6 @@ package com.myapp.struts;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -26,18 +25,21 @@ public class LoginAction extends org.apache.struts.action.Action {
 
     private final static String FAILURE = "failure";
 
+    private final static String ADMIN = "admin";
+    
+    private final static String ADMIN_EMAIL = "admin";
+    
+    private final static String ADMIN_PASS  = "pass";
+
     String ret;
 
     @Override
 
     public ActionForward execute(ActionMapping mapping, ActionForm form,
-
             HttpServletRequest request, HttpServletResponse response)
-
             throws Exception {
 
         // extract user data
-
         LoginForm formBean = (LoginForm) form;
 
         String email = formBean.getEmail();
@@ -45,69 +47,74 @@ public class LoginAction extends org.apache.struts.action.Action {
         String password = formBean.getPassword();
 
         Connection conn = null;
-                   
+
         ret = FAILURE;
-   
-        try {
 
-            String URL = "jdbc:mysql://82.141.235.157:3306/FuelWatchDB";
+        if ((email.equals(ADMIN_EMAIL)) && (password.equals(ADMIN_PASS))) {
+            
+            ret = ADMIN;
+            return mapping.findForward(ADMIN);
+            
+        } else {
+            try {
 
-            Class.forName("com.mysql.jdbc.Driver");
+                String URL = "jdbc:mysql://82.141.235.157:3306/FuelWatchDB";
 
-            conn = DriverManager.getConnection(URL, "melanie", "britremel");
+                Class.forName("com.mysql.jdbc.Driver");
 
-            String sql = "SELECT * FROM customer WHERE";
+                conn = DriverManager.getConnection(URL, "melanie", "britremel");
 
-            sql += " email = ? AND password = ?";
+                String sql = "SELECT * FROM customer WHERE";
 
-            PreparedStatement ps = conn.prepareStatement(sql);
+                sql += " email = ? AND password = ?";
 
-            ps.setString(1, email);
+                PreparedStatement ps = conn.prepareStatement(sql);
 
-            ps.setString(2, password);
+                ps.setString(1, email);
 
-            ResultSet rs = ps.executeQuery();
+                ps.setString(2, password);
 
-            while (rs.next()) {
+                ResultSet rs = ps.executeQuery();
 
-                email = rs.getString(1);
-                         
+                while (rs.next()) {
 
-                ret = SUCCESS;
+                    email = rs.getString(1);
 
-                System.out.println("Success");
-              
+                    ret = SUCCESS;
 
-            }
+                    System.out.println("Success");
 
-        } catch (Exception e) {
+                }
 
-        } finally {
+            } catch (Exception e) {
 
-            if (conn != null) {
+            } finally {
 
-                try {
+                if (conn != null) {
 
-                    conn.close();
+                    try {
 
-                } catch (Exception e) {
+                        conn.close();
+
+                    } catch (Exception e) {
+
+                    }
 
                 }
 
             }
 
-        }
-
         // perform validation
+            if (ret.equals(FAILURE)) {
 
-        if (ret.equals(FAILURE)) {
+                return mapping.findForward(FAILURE);
 
-            return mapping.findForward(FAILURE);
+            } else if (ret.equals(SUCCESS)) {
 
+                return mapping.findForward(SUCCESS);
+            }
+      
         }
-
-        return mapping.findForward(SUCCESS);
-
+        return null;
     }
-
 }

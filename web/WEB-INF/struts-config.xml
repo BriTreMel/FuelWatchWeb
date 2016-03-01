@@ -26,8 +26,10 @@
             <forward name="success" path="/success.jsp"/>
         </action>
         <action name="LoginForm" path="/login" scope="request" type="com.myapp.struts.LoginAction" validate="false">
+            <forward name="admin" path="/registerNewCust.jsp"/>
             <forward name="success" path="/loginSuccess.jsp"/>
             <forward name="failure" path="/error.jsp"/>
+            
         </action>
         <action path="/Welcome" forward="/welcomeStruts.jsp"/>
     </action-mappings>

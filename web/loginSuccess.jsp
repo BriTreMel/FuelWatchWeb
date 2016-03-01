@@ -15,9 +15,25 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>FuelWatch</title>
+        <link rel="stylesheet" type="text/css" href="formStyleSheet.css">
+        <title>Customer Home Page</title>
     </head>
     <body>
+		<div class ="head">
+			<div class="container">
+				<div class="logo">
+					<h1>FuelWatch</h1>
+				</div>
+				<div class="nav">
+					<ul>
+                                                <li><a href="editCustDetails.jsp">Edit Personal Details</a></li>
+						<li><a href="index.jsp">Log Out</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+
         <h1>Successfully logged in to site!</h1>
          <p>Your name is: <bean:write name="LoginForm" property="email" />.</p>
 
