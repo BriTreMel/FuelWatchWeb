@@ -7,6 +7,7 @@
 
 <struts-config>
     <form-beans>
+        <form-bean name="ProductForm" type="com.myapp.struts.ProductForm"/>
         <form-bean name="LoginForm" type="com.myapp.struts.LoginForm"/>
        
         <form-bean name="RegisterForm" type="com.myapp.struts.RegisterForm"/>
@@ -25,13 +26,19 @@
         <action name="RegisterForm" path="/register" scope="request" type="com.myapp.struts.RegisterAction" validate="false">
             <forward name="success" path="/success.jsp"/>
         </action>
+        
         <action name="LoginForm" path="/login" scope="request" type="com.myapp.struts.LoginAction" validate="false">
             <forward name="admin" path="/registerNewCust.jsp"/>
             <forward name="success" path="/loginSuccess.jsp"/>
             <forward name="failure" path="/error.jsp"/>
             
         </action>
-        <action path="/Welcome" forward="/welcomeStruts.jsp"/>
+        
+        <action name="ProductForm" path="/registerProd" scope="request" type="com.myapp.struts.ProductAction" validate="false">
+        <forward name="success" path="/productSucces.jsp"/>
+        <forward name="failure" path="/productError.jsp"/>
+        </action>
+    
     </action-mappings>
     
     <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
