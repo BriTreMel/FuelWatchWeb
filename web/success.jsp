@@ -15,5 +15,7 @@
     </head>
     <body>
         <h1>new customer registered</h1>
+        <h1>Register Product</h1>
+        <a href="registerProduct.jsp">Register Product</a>
     </body>
 </html>

@@ -68,6 +68,8 @@
                 </div>
                 <div class="button-section">
                     <html:submit value="Register" />
+                    
+
                 </div>
             </html:form>
         </div>
