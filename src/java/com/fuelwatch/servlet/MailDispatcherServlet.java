@@ -46,7 +46,7 @@ public class MailDispatcherServlet extends HttpServlet {
         //The customer email address that is stored externally on a database or server
         //Hardcoded for the sake of simplicity in this program
         String fromEmail = "info.fuelwatch@gmail.com";//sending to the same test address for this example
-        String userName = "Melanie Cunningham";
+        String userName = "info.fuelwatch@gmail.com";
         String password = "Microlite21";
         
         
