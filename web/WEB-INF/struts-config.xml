@@ -7,6 +7,8 @@
 
 <struts-config>
     <form-beans>
+        <form-bean name="OilUsage" type="com.myapp.struts.OilUsage"/>
+        <form-bean name="OilUsage" type="com.myapp.struts.OilUsage"/>
         <form-bean name="ProductForm" type="com.myapp.struts.ProductForm"/>
         <form-bean name="LoginForm" type="com.myapp.struts.LoginForm"/>
        
@@ -38,7 +40,10 @@
         <forward name="success" path="/productSucces.jsp"/>
         <forward name="failure" path="/productError.jsp"/>
         </action>
-    
+        <action name="OilUsage" path="/oilinfo" scope="request" type="com.myapp.struts.OilAction" validate="false">
+        <forward name="success" path="/oilSuccess.jsp"/>
+        <forward name="failure" path="oilFailure.jsp"/>   
+        </action>
     </action-mappings>
     
     <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
