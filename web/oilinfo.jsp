@@ -28,7 +28,10 @@
                              
                         <div class="section"><span>1</span>Enter Customer ID</div>
                         <div class="inner-wrap">
-                            <label>Customer ID:<html:text property="product_id" /></label>     
+                            <label>Product ID:<html:text property="product_id" /></label>     
+                        </div>
+                        <div class="button-section">
+                                    <html:submit value="SEARCH" />
                         </div>
                             
                         </html:form>

@@ -22,6 +22,16 @@ public class OilUsage extends org.apache.struts.action.ActionForm {
     private int number;
     
     private int product_id;
+    
+    String regError;
+    
+    void setRegError() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    public String getRegError(){
+        return regError;
+    }
 
     public void setProduct_id(int product_id) {
         this.product_id = product_id;

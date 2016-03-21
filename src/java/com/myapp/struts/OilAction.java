@@ -47,7 +47,7 @@ public class OilAction extends org.apache.struts.action.Action {
          //get the product data
         OilUsage formBean = (OilUsage) form;
         int product_id = formBean.getProduct_id();
-        int volume_level = formBean.getVolume_level();
+        int volume_level;// = formBean.getVolume_level();
         
         Connection conn = null;
         
@@ -61,7 +61,7 @@ public class OilAction extends org.apache.struts.action.Action {
 
                 conn = DriverManager.getConnection(URL, "melanie", "britremel");
 
-                String sql = "SELECT volume_level FROM customer WHERE";
+                String sql = "SELECT volume_level FROM customer_oil_data WHERE";
                 sql += " product_id = ? ";
                 
                 PreparedStatement ps = conn.prepareStatement(sql);
@@ -72,11 +72,13 @@ public class OilAction extends org.apache.struts.action.Action {
                 
                 while (rs.next()) {
 
-                    product_id = rs.getInt(1);
-
+                    prepStat.executeUpdate();
+                   // product_id = rs.getInt(1);
+                   volume_level = rs.getInt("volume_level");
+                   volume_level = formBean.getVolume_level();
                     ret = SUCCESS;
 
-                    System.out.println("Success");
+                    //System.out.println("Success");
 
                 }
         
