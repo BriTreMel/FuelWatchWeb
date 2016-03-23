@@ -24,24 +24,24 @@
 
       var data = new google.visualization.DataTable();
       data.addColumn('number', 'Day');
-      data.addColumn('number', 'Oil Usage');
+      data.addColumn('number', 'Oil Level That Day');
      
 
       data.addRows([
-        [1,  37.8],
-        [2,  30.9],
-        [3,  25.4],
-        [4,  11.7],
-        [5,  11.9],
-        [6,   8.8],
-        [7,   7.6],
-        [8,  12.3],
-        [9,  16.9],
-        [10, 12.8],
-        [11,  5.3],
-        [12,  6.6],
-        [13,  4.8],
-        [14,  4.2]
+        [1,  <bean:write name="OilUsage" property="volume_level" />],
+        [2,  <bean:write name="OilUsage" property="volume_level" />],
+        [3,  <bean:write name="OilUsage" property="volume_level" />],
+        [4,  <bean:write name="OilUsage" property="vols[3]" />],
+        [5,  <bean:write name="OilUsage" property="vols[4]" />],
+        [6,  <bean:write name="OilUsage" property="vols[5]" />],
+        [7,  <bean:write name="OilUsage" property="vols[6]" />],
+        [8,  <bean:write name="OilUsage" property="vols[7]" />],
+        [9,  <bean:write name="OilUsage" property="vols[8]" />],
+        [10, <bean:write name="OilUsage" property="vols[9]" />],
+        [11, <bean:write name="OilUsage" property="vols[10]" />],
+        [12, <bean:write name="OilUsage" property="vols[11]" />],
+        [13, <bean:write name="OilUsage" property="vols[12]" />],
+        [14, <bean:write name="OilUsage" property="vols[13]" />]
       ]);
 
       var options = {
@@ -81,7 +81,18 @@
 		</div>
         <h1>Historic Usage</h1>
         <p>The current oil level is: <bean:write name="OilUsage" property="volume_level" />.</p>
-
+        <br>
+        <p>The current oil level is: <bean:write name="OilUsage" property="volume_level" />.</p>
+        <br>
+        <p>The current oil level is: <bean:write name="OilUsage" property="vols[0]" />.</p>
+        <br>
+        <p>The current oil level is: <bean:write name="OilUsage" property="vols[1]" />.</p>
+        <br>
+        <p>The current oil level is: <bean:write name="OilUsage" property="vols[2]" />.</p>
+        <br>
+        <p>The current oil level is: <bean:write name="OilUsage" property="vols[3]" />.</p>
+        <br>
+        
         <br>
         <br>
         <div id="line_top_x"></div>

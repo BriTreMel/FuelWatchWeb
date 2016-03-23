@@ -7,6 +7,7 @@
 
 <struts-config>
     <form-beans>
+        <form-bean name="GaugeUsage" type="com.myapp.struts.GaugeUsage"/>
         <form-bean name="OilUsage" type="com.myapp.struts.OilUsage"/>
         <form-bean name="OilUsage" type="com.myapp.struts.OilUsage"/>
         <form-bean name="ProductForm" type="com.myapp.struts.ProductForm"/>
@@ -42,7 +43,11 @@
         </action>
         <action name="OilUsage" path="/oilinfo" scope="request" type="com.myapp.struts.OilAction" validate="false">
         <forward name="success" path="/oilSuccess.jsp"/>
-        <forward name="failure" path="oilFailure.jsp"/>   
+        <forward name="failure" path="/oilFailure.jsp"/>   
+        </action>
+        <action name="GaugeUsage" path="/gaugeInfo" scope="request" type="com.myapp.struts.GaugeAction" validate="false">
+        <forward name="success" path="/gaugeSuccess.jsp"/>
+        <forward name="failure" path="/gaugeFailure.jsp"/>
         </action>
     </action-mappings>
     

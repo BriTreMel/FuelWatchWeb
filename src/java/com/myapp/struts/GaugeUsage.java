@@ -10,18 +10,38 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.struts.action.ActionErrors;
 import org.apache.struts.action.ActionMapping;
 import org.apache.struts.action.ActionMessage;
-import java.util.Arrays;
+
 /**
  *
  * @author Trevor O'Dwyer
  */
-public class OilUsage extends org.apache.struts.action.ActionForm {
+public class GaugeUsage extends org.apache.struts.action.ActionForm {
     
     private String name;
     
     private int number;
     
-    private int product_id;
+     private int product_id;
+
+    public void setVolume_level(int volume_level) {
+        this.volume_level = volume_level;
+    }
+
+    public int getVolume_level() {
+        return volume_level;
+    }
+     
+     private int volume_level;
+     
+     
+
+    public void setProduct_id(int product_id) {
+        this.product_id = product_id;
+    }
+
+    public int getProduct_id() {
+        return product_id;
+    }
     
     String regError;
     
@@ -32,48 +52,6 @@ public class OilUsage extends org.apache.struts.action.ActionForm {
     public String getRegError(){
         return regError;
     }
-
-    public void setProduct_id(int product_id) {
-        this.product_id = product_id;
-    }
-
-    
-   
-  /*  private int[] volume_level = new int[14];
-
-    public int[] getVolume_level() {
-        return volume_level;
-    }
-
-    public void setVolume_level(int[] volume_level) {
-        this.volume_level = volume_level;
-    }*/
-    
-    private int[] vols = new int[14];
-
-    public int[] getVols() {
-        return Arrays.copyOf(vols, vols.length);
-    }
-
-    public void setVols(int[] vols) {
-        this.vols = Arrays.copyOf(vols, vols.length);
-    }
-    
-    private int volume_level;
-
-    public void setVolume_level(int volume_level) {
-        this.volume_level = volume_level;
-    }
-
-    public int getVolume_level() {
-        return volume_level;
-    }
-
-    public int getProduct_id() {
-        return product_id;
-    }
-
-    
 
 
     /**
@@ -107,7 +85,7 @@ public class OilUsage extends org.apache.struts.action.ActionForm {
     /**
      *
      */
-    public OilUsage() {
+    public GaugeUsage() {
         super();
         // TODO Auto-generated constructor stub
     }

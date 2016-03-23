@@ -20,7 +20,7 @@ import org.apache.struts.action.ActionMapping;
  *
  * @author Trevor O'Dwyer
  */
-public class OilAction extends org.apache.struts.action.Action {
+public class GaugeAction extends org.apache.struts.action.Action {
 
     /* forward name="success" path="" */
     private static final String SUCCESS = "success";
@@ -28,12 +28,7 @@ public class OilAction extends org.apache.struts.action.Action {
     
     PreparedStatement prepStat;
     String ret;
-    int vol =0;
-    int[] volumes = new int[14];
-   // int[] volume_level = new int[14];
-    int i=1;
-    int level;
-    int vols[] = new int[14];
+    int vol = 0;
 
     /**
      * This is the action called from the Struts framework.
@@ -50,16 +45,9 @@ public class OilAction extends org.apache.struts.action.Action {
             HttpServletRequest request, HttpServletResponse response)
             throws Exception {
         
-         //get the product data
-        
-        OilUsage formBean = (OilUsage) form;
+        GaugeUsage formBean = (GaugeUsage) form;
         int product_id = formBean.getProduct_id();
-       // int vols[] = formBean.getVols();
-        //int volume_level = formBean.getVolume_level();
-       // int volumes[] = new int[20];
-        //int i = 0;
-        //System.out.println("Success");
-       // formBean.setVolume_level(vol);
+        
         Connection conn = null;
         
         ret = FAILURE;
@@ -75,7 +63,7 @@ public class OilAction extends org.apache.struts.action.Action {
                 String sql = ("SELECT volume_level FROM customer_oil_data WHERE"
                 +" product_id = ? "
                 + "ORDER BY input_time DESC "
-                + "LIMIT 14");
+                + "LIMIT 1");
                 
                 PreparedStatement ps = conn.prepareStatement(sql);
                 System.out.println("Success");
@@ -83,36 +71,13 @@ public class OilAction extends org.apache.struts.action.Action {
                 
                 ResultSet rs = ps.executeQuery();
                 
-                while (rs.next()) {
-
+                while(rs.next()){
                     
                     vol = rs.getInt(1);
-                    vols[i]=rs.getInt(1);
-                   // volumes[i] = rs.getInt(1);
-                   // volumes[i]=vol;
-                    volumes[i] = vol;
-                    
                     formBean.setVolume_level(vol);
-                    
-                    for(int i=0; i<=14; i++){
-                    
-                    }
-                   // vols[i] = formBean.getVolume_level();
-                    //formBean.setVols(vols);
-                    //formBean.setVols(volumes);
-                   // volumes[i] = formBean.getVolume_level();
-                    //vols[i] = formBean.getVolume_level();
-                   // formBean.setVolume_level[i](volumes[i]);
-                   //formBean.setVolume_level(2);
-                   //volumes[i] = vol;
-                   //System.out.println(volumes);
-                   System.out.println(volumes[i]);
-                   System.out.println(vols[i]);
-                   i++;
-                   ret = SUCCESS;
-                  // volume_level = formBean.getVolume_level();
-                    
-
+                    ret = SUCCESS;
+                
+                
                 }
         
         }catch(Exception e){
@@ -133,7 +98,7 @@ public class OilAction extends org.apache.struts.action.Action {
 
             }
         
-       
+        
         
         return mapping.findForward(SUCCESS);
     }
