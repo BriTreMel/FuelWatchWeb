@@ -36,6 +36,63 @@ public class OilUsage extends org.apache.struts.action.ActionForm {
     public void setProduct_id(int product_id) {
         this.product_id = product_id;
     }
+    
+    //testing code
+    private int vol1;
+    public int getVol1() {
+        return vol1;
+    }
+
+    public void setVol1(int vol1) {
+        this.vol1 = vol1;
+    }
+    
+    private int vol2;
+    public int getVol2(){
+        return vol2;
+    }
+
+    public void setVol2(int vol2) {
+        this.vol2 = vol2;
+    }
+    
+    private int vol3;
+    public int getVol3() {
+        return vol3;
+    }
+
+    public void setVol3(int vol3) {
+        this.vol3 = vol3;
+    }
+    
+    private int vol4;
+
+    public int getVol4() {
+        return vol4;
+    }
+
+    public void setVol4(int vol4) {
+        this.vol4 = vol4;
+    }
+    
+    private int vol5;
+    public int getVol5() {
+        return vol5;
+    }
+
+    public void setVol5(int vol5) {
+        this.vol5 = vol5;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     
    

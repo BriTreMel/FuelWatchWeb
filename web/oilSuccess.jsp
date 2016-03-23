@@ -28,11 +28,11 @@
      
 
       data.addRows([
-        [1,  <bean:write name="OilUsage" property="volume_level" />],
-        [2,  <bean:write name="OilUsage" property="volume_level" />],
-        [3,  <bean:write name="OilUsage" property="volume_level" />],
-        [4,  <bean:write name="OilUsage" property="vols[3]" />],
-        [5,  <bean:write name="OilUsage" property="vols[4]" />],
+        [1,  <bean:write name="OilUsage" property="vol1" />],
+        [2,  <bean:write name="OilUsage" property="vol2" />],
+        [3,  <bean:write name="OilUsage" property="vol3" />],
+        [4,  <bean:write name="OilUsage" property="vol4" />],
+        [5,  <bean:write name="OilUsage" property="vol5" />],
         [6,  <bean:write name="OilUsage" property="vols[5]" />],
         [7,  <bean:write name="OilUsage" property="vols[6]" />],
         [8,  <bean:write name="OilUsage" property="vols[7]" />],
@@ -80,18 +80,17 @@
 			</div>
 		</div>
         <h1>Historic Usage</h1>
-        <p>The current oil level is: <bean:write name="OilUsage" property="volume_level" />.</p>
+        
         <br>
-        <p>The current oil level is: <bean:write name="OilUsage" property="volume_level" />.</p>
+        <p>The current oil level is: <bean:write name="OilUsage" property="vol1" />.</p>
         <br>
-        <p>The current oil level is: <bean:write name="OilUsage" property="vols[0]" />.</p>
+        <p>The current oil level is: <bean:write name="OilUsage" property="vol2" />.</p>
         <br>
-        <p>The current oil level is: <bean:write name="OilUsage" property="vols[1]" />.</p>
+        <p>The current oil level is: <bean:write name="OilUsage" property="vol3" />.</p>
         <br>
-        <p>The current oil level is: <bean:write name="OilUsage" property="vols[2]" />.</p>
+        <p>The current oil level is: <bean:write name="OilUsage" property="vol4" />.</p>
         <br>
-        <p>The current oil level is: <bean:write name="OilUsage" property="vols[3]" />.</p>
-        <br>
+        <p>The current oil level is: <bean:write name="OilUsage" property="vol5" />.</p>
         
         <br>
         <br>

@@ -87,16 +87,17 @@ public class OilAction extends org.apache.struts.action.Action {
 
                     
                     vol = rs.getInt(1);
-                    vols[i]=rs.getInt(1);
+                   // vols[i]=rs.getInt(1);
                    // volumes[i] = rs.getInt(1);
                    // volumes[i]=vol;
                     volumes[i] = vol;
                     
-                    formBean.setVolume_level(vol);
+                   // formBean.setVolume_level(vol);
+                  //  formBean.setVols(vols);
                     
-                    for(int i=0; i<=14; i++){
+                  /*  for(int i=0; i<=14; i++){
                     
-                    }
+                    }*/
                    // vols[i] = formBean.getVolume_level();
                     //formBean.setVols(vols);
                     //formBean.setVols(volumes);
@@ -106,8 +107,8 @@ public class OilAction extends org.apache.struts.action.Action {
                    //formBean.setVolume_level(2);
                    //volumes[i] = vol;
                    //System.out.println(volumes);
-                   System.out.println(volumes[i]);
-                   System.out.println(vols[i]);
+                  System.out.println(volumes[i]);
+                   //System.out.println(vols[i]);
                    i++;
                    ret = SUCCESS;
                   // volume_level = formBean.getVolume_level();
@@ -132,7 +133,11 @@ public class OilAction extends org.apache.struts.action.Action {
                 }
 
             }
-        
+         formBean.setVol1(volumes[1]);
+         formBean.setVol2(volumes[2]);
+         formBean.setVol3(volumes[3]);
+         formBean.setVol4(volumes[4]);
+         formBean.setVol5(volumes[5]);
        
         
         return mapping.findForward(SUCCESS);
