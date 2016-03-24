@@ -81,6 +81,16 @@ public class GaugeUsage extends org.apache.struts.action.ActionForm {
     public void setNumber(int i) {
         number = i;
     }
+    
+    private int gauge_percent;
+    
+    public int getGauge_percent(){
+        return gauge_percent;
+    }
+    
+    public void setGauge_percent(int gauge_percent){
+        this.gauge_percent = gauge_percent;
+    }
 
     /**
      *

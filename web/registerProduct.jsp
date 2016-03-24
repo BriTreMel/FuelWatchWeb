@@ -50,7 +50,7 @@
                                         <label>Minimum Level<html:text property="customer_min_level"/></label>
                                         <label>Product Serial Number<html:text property="serial_number"/></label>
                                         <label>Fuel Type ID<html:text property="fuel_type_id"/></label>
-                                        <label>Tank Type Id<html:text property="tank_type_id"/></label>
+                                        <label>Tank Size<html:text property="tank_size"/></label>
                                     </div>
                                     
                                     <div class="button-section">
@@ -66,46 +66,6 @@
         
         
         
-        <html:form action="/registerProd">
-            <tbody border="1">
-                <tr>
-                    <td colspan="2">
-                        <bean:write name="ProductForm" property="regError"
-                                    filter="false"/>
-                        &nbsp;
-                        </td>
-                </tr>
-                <tr>
-                    <td>Enter Product ID:</td>
-                    <td><html:text property="product_id" /></td>
-                </tr>
-                <tr>
-                    <td>Enter Customer Id:</td>
-                    <td><html:text property="customer_id"/></td>
-                </tr>
-                <tr>
-                    <td>Enter Minimum Level:</td>
-                    <td><html:text property="customer_min_level"/></td>
-                </tr>
-                <tr>
-                    <td>Enter Product Serial Number:</td>
-                    <td><html:text property="serial_number"/></td>
-                </tr>
-                <tr>
-                    <td>Enter Fuel Type ID:</td>
-                    <td><html:text property="fuel_type_id"/></td>
-                </tr>
-                <tr>
-                    <td>Enter Tank Type ID:</td>
-                    <td><html:text property="tank_type_id"/></td>
-                </tr>
-                <tr>
-                    <td><html:submit value="Register"/></td>
-                </tr>
-                   
-            
-            </tbody>
-            
-    </html:form>
+       
     </body>
 </html>

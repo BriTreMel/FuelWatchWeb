@@ -46,6 +46,7 @@ public class GaugeAction extends org.apache.struts.action.Action {
             throws Exception {
         
         GaugeUsage formBean = (GaugeUsage) form;
+       
         int product_id = formBean.getProduct_id();
         
         Connection conn = null;
@@ -60,10 +61,7 @@ public class GaugeAction extends org.apache.struts.action.Action {
 
                 conn = DriverManager.getConnection(URL, "melanie", "britremel");
 
-                String sql = ("SELECT volume_level FROM customer_oil_data WHERE"
-                +" product_id = ? "
-                + "ORDER BY input_time DESC "
-                + "LIMIT 1");
+                String sql = ("select (customer_oil_data.volume_level/product.tank_size)*100 from product Join customer_oil_data on customer_oil_data.product_id = product.product_id join customer on customer.customer_id = product.customer_id where product.product_id = ? Order by customer_oil_data.input_time desc limit 1");
                 
                 PreparedStatement ps = conn.prepareStatement(sql);
                 System.out.println("Success");
@@ -98,7 +96,7 @@ public class GaugeAction extends org.apache.struts.action.Action {
 
             }
         
-        
+       // formBean.setGauge_percent(500/100*formBean.getVolume_level());
         
         return mapping.findForward(SUCCESS);
     }

@@ -47,7 +47,7 @@ public class ProductAction extends org.apache.struts.action.Action {
         int customer_min_level = formBean.getCustomer_min_level();
         String serial_number = formBean.getSerial_number();
         String fuel_type_id = formBean.getFuel_type_id();
-        int tank_type_id = formBean.getTank_type_id();
+        int tank_size = formBean.getTank_size();
         Connection conn = null;
         
         ret = FAILURE;
@@ -59,14 +59,14 @@ public class ProductAction extends org.apache.struts.action.Action {
             
                 try{
                     
-                    String query ="INSERT INTO product(product_id,customer_id,customer_min_level,serial_number,fuel_type_id,tank_type_id)VALUES(?,?,?,?,?,?)";
+                    String query ="INSERT INTO product(product_id,customer_id,customer_min_level,serial_number,fuel_type_id,tank_size)VALUES(?,?,?,?,?,?)";
                     prepStat = (PreparedStatement)conn.prepareStatement(query);
                     prepStat.setInt(1,product_id);
                     prepStat.setInt(2,customer_id);
                     prepStat.setInt(3,customer_min_level);
                     prepStat.setString(4,serial_number);
                     prepStat.setString(5,fuel_type_id);
-                    prepStat.setInt(6, tank_type_id);
+                    prepStat.setInt(6, tank_size);
                    
                     prepStat.executeUpdate();
                     ret = SUCCESS;

@@ -53,16 +53,23 @@
 					<h1>FuelWatch</h1>
 				</div>
 				<div class="nav">
-					<ul>
+					<ul>    
+                                               
+                                                <li><a href="gaugeInfo.jsp">Gauge</a></li>
+                                                <li><a href="oilinfo.jsp">Historic Usage</a></li>
+                                                <li><a href="emailClient.jsp">Order Fuel</a></li>
 						<li><a href="index.jsp">Exit</a></li>
 						
 					</ul>
 				</div>
 			</div>
 		</div>
+        <div class="form-style">
         <h1>Current OIL Level</h1>
-        <p>The current oil level is: <bean:write name="GaugeUsage" property="volume_level" />.</p>
-        <div id="chart_div" style="width: 600px; height: 300px;"></div>
-        
+        <p>The current oil level is: <bean:write name="GaugeUsage" property="volume_level" />%.</p>
+            <div class="inner-wrap">
+                <div id="chart_div" style="width: 500px; height: 250px;"></div>
+            </div>
+        </div>
     </body>
 </html>

@@ -83,10 +83,84 @@ public class OilUsage extends org.apache.struts.action.ActionForm {
     public void setVol5(int vol5) {
         this.vol5 = vol5;
     }
+   
+    private int vol6;
+    public int getVol6(){
+        return vol6;
+    }
     
+    public void setVol6(int vol6){
+        this.vol6 = vol6;
+    }
     
+    private int vol7;
+    public int getVol7(){
+        return vol7;
+    }
     
+    public void setVol7(int vol7){
+        this.vol7 = vol7;
+    }
     
+    private int vol8;
+    
+    public int getVol8(){
+        return vol8;
+    }
+    
+    public void setVol8(int vol8){
+        this.vol8 = vol8;
+    }
+    
+    private int vol9;
+    
+    public int getVol9(){
+        return vol9;
+    }
+    
+    public void setVol9(int vol9){
+        this.vol9 = vol9;
+    }
+    
+    private int vol10;
+    
+    public int getVol10(){
+        return vol10;
+    }
+    
+    public void setVol10(int vol10){
+        this.vol10 = vol10;
+    }
+    
+    private int vol11;
+    
+    public int getVol11(){
+        return vol11;
+    }
+    
+    public void setVol11(int vol11){
+        this.vol11 = vol11;
+    }
+    
+    private int vol12;
+    
+    public int getVol12(){
+        return vol12;
+    }
+    
+    public void setVol12(int vol12){
+        this.vol12 = vol12;
+    }
+    
+    private int vol13;
+    
+    public int getVol13(){
+        return vol13;
+    }
+    
+    public void setVol13(int vol13){
+        this.vol13 = vol13;
+    } 
     
     
     

@@ -103,6 +103,17 @@ public class ProductForm extends org.apache.struts.action.ActionForm {
     public void setTank_type_id(int i){
         tank_type_id = i;
     }
+    
+    private int tank_size;
+    
+    public int getTank_size(){
+        return tank_size;
+    }
+    
+    private void setTank_size(int tank_size){
+        this.tank_size = tank_size;
+    
+    }
 
     /**
      *

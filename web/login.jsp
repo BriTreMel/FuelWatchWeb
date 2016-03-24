@@ -41,7 +41,7 @@
 				<div class="section"</div>
 				<div class="inner-wrap">
 					<label>E-mail<html:text property="email" /></label>
-					<label>Password<html:text property="password" /></label>
+					<label>Password<html:password property="password" /></label>
 				</div>
 				
 				<div class="button-section">

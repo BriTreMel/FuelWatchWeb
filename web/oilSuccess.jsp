@@ -118,7 +118,9 @@
         
         <br>
         <br>
+        <div class="graph">
         <div id="line_top_x"></div>
+        </div>
         
          
         
