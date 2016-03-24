@@ -44,6 +44,7 @@
 						<li><a href="#">Home</a></li>
 						<li><a href="#">About</a></li>
                                                 <li><a href="#">Contact</a></li>
+                                                <li><a href ="http://82.141.235.157:50010/mApp">Updates</a></li>
 						<li><a href="login.jsp">Log In</a></li>
 						
 					</ul>

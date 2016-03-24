@@ -20,6 +20,10 @@
 				</div>
 				<div class="nav">
 					<ul>
+                                                <l1><a href="loginSuccess.jsp">Home</a></li>
+                                                <li><a href="gaugeInfo.jsp">Gauge</a></li>
+                                                <li><a href="oilinfo.jsp">Historic Usage</a></li>
+                                                <li><a href="emailClient.jsp">Order Fuel</a></li>
 						<li><a href="index.jsp">Exit</a></li>
 						
 					</ul>
@@ -31,7 +35,7 @@
             <form method="POST" action="MailDispatcherServlet">
                 <div class="section"><span>1</span>Order Form</div>
                 <div class="inner-wrap">
-                    <label>Customer ID<input type="text" name="subject" size="75"></label>
+                    <label>Customer Email<input type="text" name="subject" size="75"></label>
                     <label>Enter Fuel Type And Amount<textarea name="message" cols="75" rows="2"></textarea></label>
                 </div>
                 <div class="button-section">

@@ -23,7 +23,9 @@
 				</div>
 				<div class="nav">
 					<ul>
-						<li><a href="index.jsp">Exit</a></li>
+                                            <li><a href="registerProduct.jsp">Register Project</a></li>
+                                            <li><a href ="http://82.141.235.157:50010/mApp">Updates</a></li>
+                                            <li><a href="index.jsp">Exit</a></li>
 						
 					</ul>
 				</div>

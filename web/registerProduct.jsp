@@ -21,7 +21,9 @@
 					<h1>FuelWatch</h1>
 				</div>
 				<div class="nav">
-					<ul>
+                                    <ul>        
+                                                <li><a href="registerNewCust.jsp">Register Customer</a></li>
+                                                <li><a href ="http://82.141.235.157:50010/mApp">Updates</a></li>
 						<li><a href="index.jsp">Exit</a></li>
 						
 					</ul>

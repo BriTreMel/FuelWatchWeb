@@ -18,12 +18,34 @@
         
     </head>
     <body>
+        <div class ="head">
+			<div class="container">
+				<div class="logo">
+					<h1>FuelWatch</h1>
+				</div>
+				<div class="nav">
+					<ul>
+                                            <l1><a href="loginSuccess.jsp">Home</a></li>
+                                            <li><a href="gaugeInfo.jsp">Gauge</a></li>
+                                            <li><a href="oilinfo.jsp">Historic Usage</a></li>
+                                            <li><a href="emailClient.jsp">Order Fuel</a></li>
+                                            <li><a href="index.jsp">Exit</a></li>
+                                                
+						
+					</ul>
+				</div>
+			</div>
+		</div>
         <div class="form-style">
 			<h1>FuelWatch<span> </span></h1>
+                        
                         <html:form action="/gaugeInfo">
                             <bean:write name="GaugeUsage" property="regError"
                             filter="false"/>
-                             
+                            
+                            
+                         
+                         
                         <div class="section"><span>1</span>Enter Product ID</div>
                         <div class="inner-wrap">
                             <label>Product ID:<html:text property="product_id" /></label>     

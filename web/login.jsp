@@ -19,6 +19,20 @@
         <link rel="stylesheet" type="text/css" href="formStyleSheet.css">
     </head>
         <body>
+            <div class ="head">
+			<div class="container">
+				<div class="logo">
+					<h1>FuelWatch</h1>
+				</div>
+				<div class="nav">
+					<ul>
+                                                
+						<li><a href="index.jsp">Exit</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
 
 	<div class="form-style">
 			<h1>FuelWatch<span> </span></h1>

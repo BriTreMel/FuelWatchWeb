@@ -33,14 +33,14 @@
         [3,  <bean:write name="OilUsage" property="vol3" />],
         [4,  <bean:write name="OilUsage" property="vol4" />],
         [5,  <bean:write name="OilUsage" property="vol5" />],
-        [6,  <bean:write name="OilUsage" property="vols[5]" />],
-        [7,  <bean:write name="OilUsage" property="vols[6]" />],
-        [8,  <bean:write name="OilUsage" property="vols[7]" />],
-        [9,  <bean:write name="OilUsage" property="vols[8]" />],
-        [10, <bean:write name="OilUsage" property="vols[9]" />],
-        [11, <bean:write name="OilUsage" property="vols[10]" />],
-        [12, <bean:write name="OilUsage" property="vols[11]" />],
-        [13, <bean:write name="OilUsage" property="vols[12]" />],
+        [6,  <bean:write name="OilUsage" property="vol6" />],
+        [7,  <bean:write name="OilUsage" property="vol7" />],
+        [8,  <bean:write name="OilUsage" property="vol8" />],
+        [9,  <bean:write name="OilUsage" property="vol9" />],
+        [10, <bean:write name="OilUsage" property="vol10" />],
+        [11, <bean:write name="OilUsage" property="vol11" />],
+        [12, <bean:write name="OilUsage" property="vol12" />],
+        [13, <bean:write name="OilUsage" property="vol13" />],
         [14, <bean:write name="OilUsage" property="vols[13]" />]
       ]);
 
@@ -73,7 +73,12 @@
 				</div>
 				<div class="nav">
 					<ul>
-						<li><a href="index.jsp">Exit</a></li>
+                                            <l1><a href="loginSuccess.jsp">Home</a></li>
+                                            <li><a href="gaugeInfo.jsp">Gauge</a></li>
+                                            <li><a href="oilinfo.jsp">Historic Usage</a></li>
+                                            <li><a href="emailClient.jsp">Order Fuel</a></li>
+                                            <li><a href="index.jsp">Exit</a></li>
+                                                
 						
 					</ul>
 				</div>
@@ -91,6 +96,25 @@
         <p>The current oil level is: <bean:write name="OilUsage" property="vol4" />.</p>
         <br>
         <p>The current oil level is: <bean:write name="OilUsage" property="vol5" />.</p>
+         <br>
+        <p>The current oil level is: <bean:write name="OilUsage" property="vol6" />.</p>
+         <br>
+        <p>The current oil level is: <bean:write name="OilUsage" property="vol7" />.</p>
+         <br>
+        <p>The current oil level is: <bean:write name="OilUsage" property="vol8" />.</p>
+         <br>
+        <p>The current oil level is: <bean:write name="OilUsage" property="vol9" />.</p>
+         <br>
+        <p>The current oil level is: <bean:write name="OilUsage" property="vol10" />.</p>
+         <br>
+        <p>The current oil level is: <bean:write name="OilUsage" property="vol11" />.</p>
+         <br>
+        <p>The current oil level is: <bean:write name="OilUsage" property="vol12" />.</p>
+         <br>
+        <p>The current oil level is: <bean:write name="OilUsage" property="vol13" />.</p>
+        
+        
+        
         
         <br>
         <br>

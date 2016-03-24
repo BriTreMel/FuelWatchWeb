@@ -26,7 +26,9 @@
 				</div>
 				<div class="nav">
 					<ul>
-                                                <li><a href="editCustDetails.jsp">Edit Personal Details</a></li>
+                                                <li><a href="gaugeInfo.jsp">Gauge</a></li>
+                                                <li><a href="oilinfo.jsp">Historic Usage</a></li>
+                                                <li><a href="emailClient.jsp">Order Fuel</a></li>
 						<li><a href="index.jsp">Log Out</a></li>
 						
 					</ul>
@@ -40,9 +42,10 @@
         <p>Your password is: 
 
                <bean:write name="LoginForm" property="password" />.</p>
-        
+               
         <p>
     <TODO> main body of website goes here!</TODO>
+    
             
         </p>
         
