@@ -2,6 +2,11 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+ Created by : Bridget Purcell
+                 Melanie Cunningham
+                 Trevor O'Dwyer
+    Group Name : BriTreMel 
+    3rd year project LIT 2016.
  */
 package com.myapp.struts;
 
@@ -14,10 +19,7 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
-/**
- *
- * @author mel76
- */
+
 public class RegisterAction extends org.apache.struts.action.Action {
 
     private static final String SUCCESS = "success";

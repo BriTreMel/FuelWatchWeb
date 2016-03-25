@@ -2,6 +2,11 @@
     Document   : oilinfo
     Created on : 17-Mar-2016, 19:39:12
     Author     : Trevor O'Dwyer
+     Created by : Bridget Purcell
+                 Melanie Cunningham
+                 Trevor O'Dwyer
+    Group Name : BriTreMel 
+    3rd year project LIT 2016.
 --%>
 
 

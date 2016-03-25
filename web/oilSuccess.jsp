@@ -3,6 +3,11 @@
     Document   : oilSuccess
     Created on : 17-Mar-2016, 21:21:48
     Author     : Trevor O'Dwyer
+     Created by : Bridget Purcell
+                 Melanie Cunningham
+                 Trevor O'Dwyer
+    Group Name : BriTreMel 
+    3rd year project LIT 2016.
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -88,33 +93,6 @@
         
         <br>
         <p>The current oil level is: <bean:write name="OilUsage" property="vol1" />.</p>
-        <br>
-        <p>The current oil level is: <bean:write name="OilUsage" property="vol2" />.</p>
-        <br>
-        <p>The current oil level is: <bean:write name="OilUsage" property="vol3" />.</p>
-        <br>
-        <p>The current oil level is: <bean:write name="OilUsage" property="vol4" />.</p>
-        <br>
-        <p>The current oil level is: <bean:write name="OilUsage" property="vol5" />.</p>
-         <br>
-        <p>The current oil level is: <bean:write name="OilUsage" property="vol6" />.</p>
-         <br>
-        <p>The current oil level is: <bean:write name="OilUsage" property="vol7" />.</p>
-         <br>
-        <p>The current oil level is: <bean:write name="OilUsage" property="vol8" />.</p>
-         <br>
-        <p>The current oil level is: <bean:write name="OilUsage" property="vol9" />.</p>
-         <br>
-        <p>The current oil level is: <bean:write name="OilUsage" property="vol10" />.</p>
-         <br>
-        <p>The current oil level is: <bean:write name="OilUsage" property="vol11" />.</p>
-         <br>
-        <p>The current oil level is: <bean:write name="OilUsage" property="vol12" />.</p>
-         <br>
-        <p>The current oil level is: <bean:write name="OilUsage" property="vol13" />.</p>
-        
-        
-        
         
         <br>
         <br>

@@ -2,6 +2,11 @@
     Document   : registerNewCust
     Created on : 16-Feb-2016, 15:11:34
     Author     : mel76
+     Created by : Bridget Purcell
+                 Melanie Cunningham
+                 Trevor O'Dwyer
+    Group Name : BriTreMel 
+    3rd year project LIT 2016.
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

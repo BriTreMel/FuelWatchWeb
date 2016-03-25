@@ -1,0 +1,256 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-Mar-2016, 17:42:49
+    Author     : Trevor O'Dwyer
+    Created by : Bridget Purcell
+                 Melanie Cunningham
+                 Trevor O'Dwyer
+    3rd year project LIT 2016.
+*/
+
+body{
+	text-align: center;
+}
+
+
+.main_body{
+
+	width: 100%;
+	margin: 0 auto;
+	text-align: 0 auto;
+	background: #F0F5ED;
+
+}
+.slide_show{
+	width: 90%;
+	height: 500px;
+	margin: 0 auto;
+	padding-top: 40px;
+	position: relative;
+	top: 1px;
+}
+
+.about{
+	width: 90%;
+	height: 350px;
+	margin: 0 auto;
+	padding-top: 20px;
+	position: relative;
+	
+}
+.faq{
+	width: 90%;
+	height: 350px;
+	margin: 0 auto;
+	padding-top: 20px;
+	position: relative;
+	
+}
+
+.contact{
+	width: 90%;
+	height: 200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+#answer1{
+		display: none;
+		text-align: left;
+		color: #666666;
+		
+	}
+#button{
+	background-color: #FFFFFF;
+	color: #CC0000;
+	
+	
+}
+#button2{
+	background-color: #FFFFFF;
+	color: #CC0000;
+	
+	
+}
+#answer2{
+	display: none;
+	text-align: left;
+	color: #666666;
+
+}
+#button3{
+	background-color: #FFFFFF;
+	color: #CC0000;
+	
+	
+}
+#answer3{
+	display: none;
+	text-align: left;
+	color: #666666;
+
+}
+#button4{
+	background-color: #FFFFFF;
+	color: #CC0000;
+	
+	
+}
+#answer4{
+	display: none;
+	text-align: left;
+	color: #666666;
+
+}
+.inner{
+	position: absolute;
+	top: 14%;
+	bottom: 14%;
+	left: 14%;
+	right: 14%;
+	text-align: left;
+
+}
+
+.flip3d{
+	width: 240px;
+	height: 200px;
+	margin: 10px;
+	float: left;
+}
+
+.flip3d >.front{
+	position: absolute;
+	-webkit-transform: perspective(600px) rotateY(0deg);
+	transform: perspective(600px) rotateY(0deg);
+	background: #dc1;
+	width: 240px;
+	height: 200px;
+	border-radius: 7px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+
+}
+.flip3d >.back{
+	position: absolute;
+	-webkit-transform: perspective(600px) rotateY(180deg); 
+	transform: perspective(600px) rotateY(180deg);
+	background: #80bfff;
+	width: 240px;
+	height: 200px;
+	border-radius: 7px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+
+}
+
+.flip3d:hover >.front{
+	-webkit-transform: perspective(600px) rotateY(-180deg);
+	transform: perspective(600px) rotateY(-180deg);
+
+}
+.flip3d:hover >.back{
+	-webkit-transform: perspective(600px) rotateY(0deg);
+	transform: perspective(600px) rotateY(0deg);
+
+}
+
+
+
+
+.banner{
+		width: 90%;
+		height: 500px;
+		margin: 0 auto;
+		padding-top: 0px;
+		position: relative;
+		top: 1px;
+		/*background: #EBF5F5;*/
+	
+
+}
+
+#wss{
+	opacity: 0;
+	-webkit-transition: opacity 1.0s linear 0s;
+	transition: opacity 1.0s linear 0s;
+
+}
+
+
+
+
+.container{
+	width: 950px;
+	margin: 0 auto;
+	text-align: 0 auto;
+}
+
+.head{
+		height: 100px;
+		background: #B40404;
+		width: 100%;
+		z-index: 10;
+		position: relative;
+		border-radius: 10px;
+                -webkit-border-radius:10px;
+		-moz-border-radius: 10px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+		-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+		-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+
+.footer{
+	
+	height: 80px;
+	background: #B40404;
+	color: #FFFFFF;
+	width: 100%;
+	z-index: 10;
+	position: relative;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+
+}
+
+.logo{
+	float: left;
+	font-family: "Helvetica";
+	font-size: 15px;
+	
+
+}
+
+.nav{
+	float: right;
+
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+
+}
+
+li{
+	list-style: none;
+	float: left;
+	margin-left: 15px;
+	padding-top: 15px;
+
+}
+
+

@@ -2,6 +2,11 @@
     Document   : emailClient
     Created on : 11-Mar-2016, 12:17:58
     Author     : Trevor O'Dwyer
+     Created by : Bridget Purcell
+                 Melanie Cunningham
+                 Trevor O'Dwyer
+    Group Name : BriTreMel 
+    3rd year project LIT 2016.
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -20,7 +25,7 @@
 				</div>
 				<div class="nav">
 					<ul>
-                                                <l1><a href="loginSuccess.jsp">Home</a></li>
+                                               
                                                 <li><a href="gaugeInfo.jsp">Gauge</a></li>
                                                 <li><a href="oilinfo.jsp">Historic Usage</a></li>
                                                 <li><a href="emailClient.jsp">Order Fuel</a></li>

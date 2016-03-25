@@ -2,6 +2,12 @@
     Document   : registerProduct
     Created on : 07-Mar-2016, 21:15:32
     Author     : Trevor O'Dwyer
+    Created by : Bridget Purcell
+                 Melanie Cunningham
+                 Trevor O'Dwyer
+    Group Name : BriTreMel 
+    3rd year project LIT 2016.
+
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -47,7 +53,7 @@
                                 </div>
                                 <div class="section"><span>3</span>Product Information</div>
                                     <div class="inner-wrap">
-                                        <label>Minimum Level<html:text property="customer_min_level"/></label>
+                                        <label>Minimum Level %<html:text property="customer_min_level"/></label>
                                         <label>Product Serial Number<html:text property="serial_number"/></label>
                                         <label>Fuel Type ID<html:text property="fuel_type_id"/></label>
                                         <label>Tank Size<html:text property="tank_size"/></label>

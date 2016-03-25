@@ -2,6 +2,11 @@
     Document   : login
     Created on : 18-Feb-2016, 17:56:03
     Author     : mel76
+     Created by : Bridget Purcell
+                 Melanie Cunningham
+                 Trevor O'Dwyer
+    Group Name : BriTreMel 
+    3rd year project LIT 2016.
 --%>
 
 <%@page contentType="text/html"%>

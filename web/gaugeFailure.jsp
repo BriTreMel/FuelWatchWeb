@@ -2,6 +2,11 @@
     Document   : gaugeFailure
     Created on : 22-Mar-2016, 21:50:50
     Author     : Trevor O'Dwyer
+     Created by : Bridget Purcell
+                 Melanie Cunningham
+                 Trevor O'Dwyer
+    Group Name : BriTreMel 
+    3rd year project LIT 2016.
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
